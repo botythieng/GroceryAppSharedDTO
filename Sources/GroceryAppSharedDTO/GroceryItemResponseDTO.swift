@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct GroceryItemResponseDTO: Codable {
+public struct GroceryItemResponseDTO: Codable {
     
-    var id: UUID
-    var title: String
-    var price: Double
-    var quantity: Int
+    public var id: UUID
+    public var title: String
+    public var price: Double
+    public var quantity: Int
     
-    init(id: UUID, title: String, price: Double, quantity: Int) {
+    public init(id: UUID, title: String, price: Double, quantity: Int) {
         self.id = id
         self.title = title
         self.price = price
